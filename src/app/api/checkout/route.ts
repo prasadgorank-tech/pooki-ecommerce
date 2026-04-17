@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
     let orderId = "mock_order_" + Math.floor(Math.random()*1000);
 
-    if (userId) {
+    if (userId && supabaseAdmin) {
       const orderTotal = items.reduce((sum: number, item: any) => sum + item.price * item.quantity, 0);
       const { data, error } = await supabaseAdmin.from('orders').insert({
         user_id: userId,
