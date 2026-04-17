@@ -198,7 +198,7 @@ export default function Navbar() {
                 onClick={() => { setAuthOpen(true); setMobileOpen(false); }}
                 className="text-sm font-bold uppercase tracking-widest text-[var(--foreground)] hover:text-[var(--color-muted)] transition-colors flex items-center gap-3 mt-auto w-full text-left"
               >
-                <User size={18} /> My Account
+                <UserIcon size={18} /> My Account
               </button>
             </nav>
             <div className="p-6 border-t border-[var(--color-border)]">
